@@ -18,7 +18,7 @@
             <div id="top-header" style="height:49px;">
                 <div class="container">
                     <div class="logofl">
-                        <a href="#" class="logo"><img src="img/logo_m.png"></a>
+                        <a href="#" class="logo"><img src="<?php echo base_url()?>img/logo_m.png"></a>
                         <a href="#" class="menu android selected"><i class="fa fa-android" style="color:white"></i>Android</a>
                         <a href="#" class="menu iOS"><i class="fa fa-apple" style="color:white"></i>iOS</a>
                     </div>

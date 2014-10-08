@@ -3,22 +3,22 @@
                 <div class="sponsor seperate">
                   <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                      <img src="img/sponsor-logo-1.png" alt="...">
+                      <img src="<?php echo base_url()?>img/sponsor-logo-1.png" alt="...">
                     </a>
                   </div>
                   <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                      <img src="img/sponsor-logo-1.png" alt="...">
+                      <img src="<?php echo base_url()?>img/sponsor-logo-2.png" alt="...">
                     </a>
                   </div>
                   <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                      <img src="img/sponsor-logo-1.png" alt="...">
+                      <img src="<?php echo base_url()?>img/sponsor-logo-3.png" alt="...">
                     </a>
                   </div>
                   <div class="col-xs-6 col-md-3">
                     <a href="#" class="thumbnail">
-                      <img src="img/sponsor-logo-1.png" alt="...">
+                      <img src="<?php echo base_url()?>img/sponsor-logo-4.png" alt="...">
                     </a>
                   </div>
                 </div>
