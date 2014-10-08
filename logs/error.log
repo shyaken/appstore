@@ -1,0 +1,4 @@
+[Thu Oct 09 05:45:14 2014] [error] [client 127.0.0.1] File does not exist: C:/wamp/www/IAWStore/favicon.ico
+[Thu Oct 09 05:52:09 2014] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://iawstore.local/css/
+[Thu Oct 09 05:52:09 2014] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://iawstore.local/css/
+[Thu Oct 09 05:52:09 2014] [error] [client 127.0.0.1] client denied by server configuration: C:/Apache2, referer: http://iawstore.local/css/
