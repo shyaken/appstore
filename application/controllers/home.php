@@ -19,11 +19,97 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('common/header');
+        //load model
+        $this->load->model('App_model','appm');
+        
+        //processing data
+        $data['os'] = "android";
+        $data['device'] = "mobile";
+        $data['catid'] = "default";
+        $data['category_header'] = "apps";
+        $data['applist'] = $this->appm->getList('android','mobile','all','date');
+        $data['first_list'] = $this->appm->getList();
+        $data['second_list'] = $this->appm->getList();
+        $data['third_list'] = $this->appm->getList();
+        
+        //render view
+        $this->load->view('common/header');
         $this->load->view('list/banner');
-        $this->load->view('list/list');
+        $this->load->view('list/list',$data);
         $this->load->view('common/footer');
 	}
+        
+    public function category($os = 'android',$device = 'mobile',$catid = 'all') {
+        //load model 
+        $this->load->model('App_model','appm');
+        
+        //process data
+        $data['os'] = $os;
+        $data['catid'] = $catid;
+        $data['device'] = $device;
+        $data['category_header'] = "apps";
+        if ($catid != 'all') {
+            $this->db->select('name');
+            $this->db->where('alias',$catid);
+            $category = $this->db->get('category')->first_row('array');
+            $data['category_header'] = $category['name'];
+            if ($catid != 'game') {
+                $data['category_header'] .= ' apps';
+            }
+        }
+        $data['first_list'] = $this->appm->getList($os,$device,$catid);
+        $data['second_list'] = $this->appm->getList($os,$device,$catid);
+        $data['third_list'] = $this->appm->getList($os,$device,$catid);
+        
+        //render view
+        $this->load->view('common/header');
+        $this->load->view('list/banner');
+        $this->load->view('list/list',$data);
+        $this->load->view('common/footer');
+    }
+    
+    public function category_opt($os = 'android',$device = 'mobile',$catid = 'all',$option='') {
+        //load model 
+        $this->load->model('App_model','appm');
+        
+        //process data
+        $data['os'] = $os;
+        $data['catid'] = $catid;
+        $data['device'] = $device;
+        $data['category_header'] = "apps";
+        if ($catid != 'all') {
+            $this->db->select('name');
+            $this->db->where('alias',$catid);
+            $category = $this->db->get('category')->first_row('array');
+            $data['category_header'] = $category['name'];
+            if ($catid != 'game') {
+                $data['category_header'] .= ' apps';
+            }
+        }
+        $data['first_list'] = $this->appm->getList($os,$device,$catid);
+        $data['second_list'] = $this->appm->getList($os,$device,$catid);
+        $data['third_list'] = $this->appm->getList($os,$device,$catid);
+        
+        //render view
+        $this->load->view('common/header');
+        $this->load->view('list/banner');
+        $this->load->view('list/list_one_cat',$data);
+        $this->load->view('common/footer');
+    }
+    
+    function detail($id) {
+        //load model 
+        $this->load->model('App_model','appm');
+        
+        //process data
+        $data['app'] = array();
+        
+        //render view
+        $this->load->view('common/header');
+        $this->load->view('detail/appbanner');
+        $this->load->view('detail/appinfo',$data);
+        $this->load->view('common/footer');
+    }
 }
 
 /* End of file welcome.php */

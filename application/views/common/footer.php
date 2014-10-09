@@ -34,9 +34,11 @@
                     <a href="#" class="">Contact</a>
                 </div>
                 <div class="right"> 
-                    Copyright © 2014 <span class="color_h1">UnityAppStudio</span>. All Rights Reserved.
+                    Copyright © 2014 <a href="http://unityappstudio.com"><span class="color_h1">UnityAppStudio</span></a>. All Rights Reserved.
                 </div> <!-- end right -->
             </div>   <!-- end container -->
         </div> <!-- end footer -->
     </body>
 </html>
+
+<script type="text/javascript" src="<?php echo base_url();?>js/common.js"></script>

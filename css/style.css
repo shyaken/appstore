@@ -43,6 +43,7 @@ h1,h2,h3,h4,h5,h6{
 body{
 	font-family:"Helvetica Neue",Arial,Helvetica,Geneva,sans-serif;
 	font-size:13px;
+        min-width: 1000px;
 }
 
 .row{
@@ -73,7 +74,56 @@ body{
 	font-weight: bold;
 }
 
+
 /****************************** BODY CSS ***************************/
+.left-body {
+    padding: 0px;
+}
+
+.app-list {
+    margin-top: 15px;
+}
+
+.app-list h1{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.app-list .row,.app-list .row div{
+    border: 0;
+}
+
+.app-list .row div .thumbnail img{
+    margin-left: 0px;
+}
+
+.main-body {
+    padding-left: 30px;
+}
+
+.app-list .row div .thumbnail .caption h3{
+    font-weight: bold;
+}
+
+.app-list .row div .thumbnail .caption p .fa{
+    color: #fed559;
+}
+
+.app-list .row div .thumbnail .caption p{
+    margin-top: 10px;
+}
+
+.app-list .row div .thumbnail .caption{
+    padding: 0;
+    margin-top: 14px;
+}
+
+.suggested-app .media a img {
+    width: 50px;
+    height: 50px;
+}
+
 .category-list {
 	border: 1px;
 	border-style: solid;
@@ -81,13 +131,16 @@ body{
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	width: 268px;
 	padding-bottom: 5px;
 	margin-top: 15px;
 }
 
 .category-list .seperate {
-	margin: -1 30px -1 30px;
+	margin: -1px 30px -1px 30px;
+}
+
+.category-list .list-group-item {
+	border: 0;
 }
 
 .category-list h1{
@@ -120,12 +173,13 @@ body{
 	text-overflow: ellipsis;
 }
 
-.category-list a.active{
+.category-list li.active{
 	background-color: #e1e8ed;
 	text-decoration: none;
 }
 
-.category-list a:hover{
+.category-list li:hover{
+        cursor: pointer;
 	color: #8dc63f;
 	text-decoration: none;
 }
@@ -251,3 +305,53 @@ body{
 
 .clear{clear:both}
 
+/************************** detail css *****************************/
+
+.appbanner {
+    background-color: white;
+    height: 20%;
+}
+
+.appbanner .container .appdetail {
+    margin-top: 40px;
+    margin-bottom: 45px;
+}
+
+.appbanner .container .appdetail.right {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.appbanner .container .media .media-heading{
+    margin-top: 22px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.appbanner .container .media .apptype{
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.appbanner .container .media .apprate{
+    margin-top: 15px;
+    margin-bottom:  15px;
+}
+.appbanner .container .media .apprate i{
+    color: #fed559;
+}
+
+.appbanner .container .media .install_app{
+    padding: 15px 28px 15px 28px;
+    background-color: #62b23f;
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+}
+
+.appbanner .container .media a{
+    margin-right: 22px;
+}
