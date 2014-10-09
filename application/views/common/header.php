@@ -23,7 +23,7 @@
             <div id="top-header" style="height:49px;">
                 <div class="container">
                     <div class="logofl">
-                        <a href="<?php echo base_url()?>" class="logo"><img src="<?php echo base_url()?>img/logo_m.png"></a>
+                        <a href="<?php echo base_url()?>" class="logo"><img src="<?php echo base_url()?>img/logo.png"></a>
                         <a href="#" onclick="changeOs('android')" class="menu android selected"><i class="fa fa-android" style="color:white"></i>Android</a>
                         <a href="#" onclick="changeOs('iOS')" class="menu iOS"><i class="fa fa-apple" style="color:white"></i>iOS</a>
                     </div>
