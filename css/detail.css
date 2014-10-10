@@ -16,7 +16,7 @@ and open the template in the editor.
 	margin-top: 18px;
 }
 
-.detail-tab .select-tab a {
+.detail-tab .select-tab a, #selected-tab a{
 	border: 1px solid #e1e8ed;
 	color: black;
 	background-color: white;
@@ -44,7 +44,7 @@ and open the template in the editor.
     height: 106px;
 }
 
-.detail-tab .select-tab a.active{
+.detail-tab .select-tab a.active, #selected-tab a{
 	color: #8dc63f;
 	background-color: #f9f9f9;
         border-bottom: 1px solid #f9f9f9;
@@ -52,6 +52,10 @@ and open the template in the editor.
 .detail-tab .select-tab a:hover {
 	text-decoration: none;
 	color: #304f06;
+}
+
+#selected-tab {
+    margin-top: 0;
 }
 
 .tab-detail .section {
@@ -118,4 +122,8 @@ and open the template in the editor.
 
 .rate-tab-top a{
     padding: 0px 5px 0px 5px;
+}
+
+.tab-content .row{
+    border: 0;
 }

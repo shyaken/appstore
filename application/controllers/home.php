@@ -28,8 +28,11 @@ class Home extends CI_Controller {
         $data['catid'] = "default";
         $data['category_header'] = "apps";
         $data['first_list'] = $this->appm->getTopRated();
+        log_message('error', $this->db->last_query());
         $data['second_list'] = $this->appm->getNewest();
+        log_message('error', $this->db->last_query());
         $data['third_list'] = $this->appm->getTopDownload();
+        log_message('error', $this->db->last_query());
         
         //render view
         $this->load->view('common/header');
@@ -57,8 +60,11 @@ class Home extends CI_Controller {
             }
         }
         $data['first_list'] = $this->appm->getTopRated($os,$device,$catid);
+        log_message('error', $this->db->last_query());
         $data['second_list'] = $this->appm->getNewest($os,$device,$catid);
+        log_message('error', $this->db->last_query());
         $data['third_list'] = $this->appm->getTopDownload($os,$device,$catid);
+        log_message('error', $this->db->last_query());
         
         //render view
         $this->load->view('common/header');
@@ -101,7 +107,7 @@ class Home extends CI_Controller {
         $this->load->model('App_model','appm');
         
         //process data
-        $this->db->select('id, name, os, device, description, publisher_id, version, updated_date, size, category_id, language, download, path');
+        $this->db->select('id, name, os, device, total_rate_count, description, publisher_id, version, updated_date, size, category_id, language, download, path');
         $this->db->where('id',$id);
         $app = $this->db->get('apps');
         $app = $app->first_row('array');

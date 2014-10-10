@@ -26,6 +26,9 @@ address,caption,cite,code,dfn,em,th,var{
 
 /****************************** ALL CSS *****************************/
 
+.hide{
+    display: none;
+}
 
 ol,ul{
 	list-style:none
@@ -297,8 +300,14 @@ body{
 }
 
 .sponsor div a{
-	border:0;
-	margin: 5px;
+	border: 0;
+	margin: 0px;
+}
+
+.sponsor div{
+	border: 0;
+	margin: 0px;
+        min-height: 100px;
 }
 
 
