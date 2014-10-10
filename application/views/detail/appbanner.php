@@ -3,7 +3,7 @@
         <div class="left appdetail">
             <div class="media">
                 <a class="pull-left" href="#">
-                    <img class="media-object" width="173px" src="<?php echo base_url() ?>icon/30.png" alt="...">
+                    <img class="media-object" width="173px" src="<?php echo base_url().'icon/'.$id.'.png' ?>" alt="...">
                 </a>
                 <div class="media-body">
                     <div>
