@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 9, 2014, 10:35:01 PM
+    Author     : shyaken
+*/
+
+.body {
+    background-color: #f9f9f9;
+}
+
+.detail-tab div{
+	margin-top: 18px;
+}
+
+.detail-tab .select-tab a {
+	border: 1px solid #e1e8ed;
+	color: black;
+	background-color: white;
+	padding: 10px 37px 10px 36px;
+	display: inline-block;
+	float: left;
+	font-size: 13px;
+}
+
+.detail-tab .select-tab a.active{
+	color: #8dc63f;
+	background-color: #f9f9f9;
+        border-bottom: 1px solid #f9f9f9;
+}
+.detail-tab .select-tab a:hover {
+	text-decoration: none;
+	color: #304f06;
+}
+
+.tab-detail .section {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.show {
+    display: block;
+}
+
+.fa.fa-fw {
+    color: #fed559;
+}
+
+.rate-tab-top {
+    margin-top: 2%;
+    width: 100%;
+    min-height: 24px;
+}
+
+.comment-input-div {
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+    min-height: 80px;
+}
+
+.comment-input-div textarea{
+    border-radius: 5px;
+}
+
+.comment-input-div a{
+    margin-top: 15px;
+    font-size: 35px;
+    margin-right: 45px;
+}
+
+.comment-content {
+    padding: 10px 0px;
+    border-bottom: 1px dotted #c7c7c7;
+}
+
+.comment-content .title{
+    font-weight: bold;
+}
+
+.comment-content .title i{
+    color: #fed559;
+}
+
+.comment-content .author{
+    color: #969696;
+}
+
+.comment-content div{
+    margin-top: 5px;
+}
+
+.rate-tab-top a{
+    padding: 0px 5px 0px 5px;
+}

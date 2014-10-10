@@ -12,20 +12,21 @@ $(function(){
        $(".select-device a").removeClass('active')
        $(this).addClass('active')
     });
-    
-    if(category == 'default') {
-        category = 'all';
-    } else {
-        $(document).scrollTop('450');
+    if(typeof(category) !== "undefined") {
+        if(category == 'default') {
+            category = 'all';
+        } else {
+            $(document).scrollTop('20%');
+        }
+
+        $(".category-list.category li").removeClass('active');
+        $(".category-list.category .category-"+category).addClass('active');
+        $(".logofl .menu").removeClass('selected');
+        $(".logofl .menu."+os).addClass('selected');
+        $(".select-device a").removeClass('active');
+        $(".select-device ."+device).addClass('active');
+        $("#device-name").html(device.toUpperCase())
     }
-    
-    $(".category-list.category li").removeClass('active');
-    $(".category-list.category .category-"+category).addClass('active');
-    $(".logofl .menu").removeClass('selected');
-    $(".logofl .menu."+os).addClass('selected');
-    $(".select-device a").removeClass('active');
-    $(".select-device ."+device).addClass('active');
-    $("#device-name").html(device.toUpperCase())
 })
 
 function changeCategory(catid) {

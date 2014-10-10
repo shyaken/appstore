@@ -18,13 +18,13 @@
             </div>
         </div>
         <div class="right appdetail">
-            <p>Category: Game</p>
-            <p>Updated: 09 October 2014</p>
-            <p>Version: 1.7.2</p>
-            <p>Size: 67.8MB</p>
-            <p>Language: English</p>
-            <p>Rovio Entertainment Ltd</p>
-            <p>Compatibility: Requires iOS 4.3 or later</p>
+            <p>Category: <?php echo $category ?></p>
+            <p>Updated: <?php echo date('d M Y', $updated_date)?></p>
+            <p>Version: <?php echo $version?></p>
+            <p>Size: <?php echo $size?></p>
+            <p>Language: <?php echo $language?></p>
+            <p><?php echo $publisher?></p>
+            <p>Download: <?php echo $download?></p>
         </div>
     </div>
 </div> <!-- end clear -->
