@@ -236,6 +236,10 @@ body{
 		background:#181818;
 }
 
+body {
+    min-width: 399px;
+}
+
 .right-header button {
 	border: 0;
 	border-right: 1px;
@@ -247,9 +251,12 @@ body{
 	color: #a5adb2;
 }
 
+.right-header.right {
+    margin-top: 12px;
+}
+
 .logofl{
 	vertical-align: middle;
-	margin: 0px 0px 14px 0px;
 }
 
 .logofl a:hover, .right-header a:hover{

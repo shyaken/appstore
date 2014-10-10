@@ -22,16 +22,16 @@
         <div id="header">
             <div id="top-header" style="height:49px;">
                 <div class="container">
-                    <div class="logofl">
+                    <div class="logofl left">
                         <a href="<?php echo base_url()?>" class="logo"><img src="<?php echo base_url()?>img/logo.png"></a>
                         <a href="#" onclick="changeOs('android')" class="menu android selected"><i class="fa fa-android" style="color:white"></i>Android</a>
                         <a href="#" onclick="changeOs('iOS')" class="menu iOS"><i class="fa fa-apple" style="color:white"></i>iOS</a>
                     </div>
                     <div class="right-header right">
                         <input type="text" placeholder="Search ..." id="header-search" class="">
-                        <button type="" class="btn btn-link"><i class="fa fa-search fa-fw"></i></button>
-                        <button type="" class="btn btn-link"><i class="fa fa-envelope fa-fw"></i></button>
-                        <button type="" class="btn btn-link"><i class="fa fa-bell fa-fw"></i></button>
+                        <button type="" class="btn btn-link"><i class="fa fa-search"></i></button>
+                        <button type="" class="btn btn-link"><i class="fa fa-envelope"></i></button>
+                        <button type="" class="btn btn-link"><i class="fa fa-bell"></i></button>
                         <a href="#" class="">Shyaken</a>
                     </div>
                 </div>

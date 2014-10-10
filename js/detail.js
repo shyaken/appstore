@@ -17,7 +17,6 @@ function reponsiveHandle() {
     if (window_width < 521) {
         $('.right.appdetail').css('float','left').css('text-align','left').css('margin-top','0').css('padding-top','0')
         $('.appdetail').css('margin-bottom','25px')
-        console.log(window_width);
     } else if(window_width >= 521) {
         $('.right.appdetail').css('float','right').css('text-align','right').css('margin-top','40px').css('padding-top','20px');
         $('.appdetail').css('margin-bottom','45px')
