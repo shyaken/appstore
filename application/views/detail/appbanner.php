@@ -7,9 +7,9 @@
                 </a>
                 <div class="media-body">
                     <div>
-                        <h1 class="media-heading appname">Asphalt Overdrive</h1>
+                        <h1 class="media-heading appname"><?php echo $name?></h1>
                         <h2 class="apptype">Free</h2>
-                        <h4 class="apprate"><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-half-full fa-fw"></i><i class="fa fa-star-o fa-fw"></i>(201 reviews)</h4>
+                        <h4 class="apprate"><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-half-full fa-fw"></i><i class="fa fa-star-o fa-fw"></i>(<?php echo $total_rate_count?> reviews)</h4>
                     </div>
                     <div class="left">
                         <a href="<?php echo base_url().'download/'.$id?>" class="install_app">DOWNLOAD</a>

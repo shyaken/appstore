@@ -44,8 +44,8 @@
                             <img class="media-object" src="<?php echo base_url() ?>icon/2.png" alt="">
                         </a>
                         <div class="media-body">
-                            <h2 class="media-heading">Closure of certain...</h2>
-                            aoseuh
+                            <h2 class="media-heading">Monsu</h2>
+                            Games
                         </div>
                     </div>
                     <div class="seperate"></div>
@@ -54,8 +54,8 @@
                             <img class="media-object" src="<?php echo base_url() ?>icon/3.png" alt="">
                         </a>
                         <div class="media-body">
-                            <h2 class="media-heading">Closure of certain...</h2>
-                            aoseuh
+                            <h2 class="media-heading">Bike Rivals</h2>
+                            Games
                         </div>
                     </div>
                     <div class="seperate"></div>
@@ -64,8 +64,8 @@
                             <img class="media-object" src="<?php echo base_url() ?>icon/4.png" alt="">
                         </a>
                         <div class="media-body">
-                            <h2 class="media-heading">Closure of certain...</h2>
-                            aoseuh
+                            <h2 class="media-heading">Youtube</h2>
+                            Photo & Video
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="first-list app-list">
                     <h1 id="first-list-name">Top free <?php echo $category_header ?></h1>
                     <div class="row">
-                        <?php foreach ($second_list as $app) { ?>
+                        <?php foreach ($first_list as $app) { ?>
                             <div class="col-sm-3 col-md-2">
                                 <div class="thumbnail">
                                     <a href="<?php echo base_url() . 'detail/' . $app['id'] ?>"><img src="<?php echo base_url() ?>icon/<?php echo $app['id'] ?>.png" alt="..."></a>
@@ -112,7 +112,7 @@
                 <div class="third-list app-list">
                     <h1 id="third-list-name">Top download <?php echo $category_header ?></h1>
                     <div class="row">
-                        <?php foreach ($second_list as $app) { ?>
+                        <?php foreach ($third_list as $app) { ?>
                             <div class="col-sm-3 col-md-2">
                                 <div class="thumbnail">
                                     <a href="<?php echo base_url() . 'detail/' . $app['id'] ?>"><img src="<?php echo base_url() ?>icon/<?php echo $app['id'] ?>.png" alt="..."></a>
