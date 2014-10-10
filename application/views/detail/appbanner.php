@@ -12,7 +12,7 @@
                         <h4 class="apprate"><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-half-full fa-fw"></i><i class="fa fa-star-o fa-fw"></i>(201 reviews)</h4>
                     </div>
                     <div class="left">
-                        <a href="#" class="install_app">DOWNLOAD</a>
+                        <a href="<?php echo base_url().'download/'.$id?>" class="install_app">DOWNLOAD</a>
                     </div>
                 </div>
             </div>
@@ -25,6 +25,13 @@
             <p>Language: <?php echo $language?></p>
             <p><?php echo $publisher?></p>
             <p>Download: <?php echo $download?></p>
+        </div>
+        <div class="detail-tab container left">
+            <div class="left select-tab">
+                <a href="javascript:changeTab('detail')" class="detail active">Details</a>
+                <a href="javascript:changeTab('rate')" class="rate">Ratings and Reviews</a>
+                <a href="javascript:changeTab('related')" class="related">Related</a>
+            </div>
         </div>
     </div>
 </div> <!-- end clear -->

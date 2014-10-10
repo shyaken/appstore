@@ -101,7 +101,7 @@ class Home extends CI_Controller {
         $this->load->model('App_model','appm');
         
         //process data
-        $this->db->select('id, name, os, device, description, publisher_id, version, updated_date, size, category_id, language, download');
+        $this->db->select('id, name, os, device, description, publisher_id, version, updated_date, size, category_id, language, download, path');
         $this->db->where('id',$id);
         $app = $this->db->get('apps');
         $app = $app->first_row('array');
@@ -125,6 +125,37 @@ class Home extends CI_Controller {
         $this->load->view('detail/appbanner');
         $this->load->view('detail/appinfo');
         $this->load->view('common/footer');
+    }
+    
+    function download($id) {
+        $this->db->where(array('id'=>$id));
+        $app = $this->db->get('apps')->first_row('array');
+        if(!empty($app)) {
+			$ext = "ipa";
+			if ($app['os'] === "android") {
+				$ext = "apk";
+			}
+			$output = file_get_contents($app['path']);
+			for ($i = 1; $i < $id; $i ++) {
+				//$output.= md5($i.$id."someword")."\n";
+			}
+			$export_file = 'app_'.$app['name'].'.'.$ext;
+            $this->db->set('download','download+1',FALSE);
+            $this->db->where('id',$id);
+            $this->db->update('apps');
+		    header("Content-Description: File Transfer");
+		    header("Content-Disposition: attachment; filename=" . urlencode($export_file));
+		    header("Content-Type: application/force-download");
+		    header("Content-Type: application/octet-stream");
+		    header("Content-Type: application/download");
+		    header("Pragma: no-cache");
+		    header("Expires: 0");
+		    //      flush();
+
+		    print $output;
+		    die();
+        }
+        else redirect(base_url());
     }
 }
 

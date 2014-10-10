@@ -1,12 +1,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/detail.css">
+
 <div class="body">
-    <div class="detail-tab container">
-        <div class="left select-tab">
-            <a href="javascript:changeTab('detail')" class="detail active">Details</a>
-            <a href="javascript:changeTab('rate')" class="rate">Ratings and Reviews</a>
-            <a href="javascript:changeTab('related')" class="related">Related</a>
-        </div>
-    </div>
     <div class="seperate" style="margin-top:-1px"></div>
     <div class="container"> <!-- end top-body -->
         <div class="under-body">
@@ -114,7 +108,7 @@
                                 <?php foreach ($same_category as $app) { ?>
                                 <div class="col-sm-3 col-md-2">
                                   <div class="thumbnail">
-                                      <a href="<?php echo base_url()?>detail/<?php echo $app['id']?>">"<img src="<?php echo base_url()?>icon/<?php echo $app['id']?>.png" alt="..."></a>
+                                      <a href="<?php echo base_url()?>detail/<?php echo $app['id']?>"><img src="<?php echo base_url()?>icon/<?php echo $app['id']?>.png" alt="..."></a>
                                     <div class="caption">
                                       <h3><?php echo $app['name'] ?></h3>
                                       <p><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star fa-fw"></i><i class="fa fa-star-half-full fa-fw"></i><i class="fa fa-star-o fa-fw"></i></p>

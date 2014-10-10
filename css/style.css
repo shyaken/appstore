@@ -264,7 +264,7 @@ body{
 }
 
 .logofl a.logo{
-	padding: 10px 20px 10px 20px;
+	padding: 9px 20px 9px 20px;
 }
 
 .logofl a.menu, .logofl a.logo {
@@ -306,7 +306,6 @@ body{
 .clear{clear:both}
 
 /************************** detail css *****************************/
-
 .appbanner {
     background-color: white;
     height: 20%;

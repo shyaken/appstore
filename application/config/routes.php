@@ -43,6 +43,7 @@ $route['404_override'] = '';
 $route['category/([a-zA-Z]+)/([a-z]+)/([a-z_]+)'] = 'home/category/$1/$2/$3';
 $route['category/([a-zA-Z]+)/([a-z]+)/([a-z_]+)/([a-z_]+)'] = 'home/category_opt/$1/$2/$3/$4';
 $route['detail/([0-9]+)'] = 'home/detail/$1';
+$route['download/([0-9]+)'] = 'home/download/$1';
 
 
 /* End of file routes.php */

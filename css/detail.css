@@ -26,6 +26,24 @@ and open the template in the editor.
 	font-size: 13px;
 }
 
+.detail-tab .select-tab a.rate {
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.detail-tab.container {
+	padding: 0;
+}
+
+.app-list .thumbnail {
+    background-color: #f9f9f9;
+}
+
+.app-list .thumbnail img{
+    width: 106px;
+    height: 106px;
+}
+
 .detail-tab .select-tab a.active{
 	color: #8dc63f;
 	background-color: #f9f9f9;
